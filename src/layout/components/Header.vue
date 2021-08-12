@@ -1,9 +1,8 @@
 <template>
   <div class="header-container">
     <el-menu :default-active="$route.path" mode="horizontal" router @select="handleSelect">
-      <el-menu-item index="/sunhome">SunHome</el-menu-item>
-      <el-menu-item index="/beautylife">BeautyLife</el-menu-item>
-      <el-menu-item index="/loveforever">LoveForever</el-menu-item>
+      <el-menu-item index="/loveyou">LoveYou</el-menu-item>
+      <el-menu-item index="/lovelife">LoveLife</el-menu-item>
     </el-menu>
   </div>
 </template>
@@ -32,7 +31,6 @@ export default {
 }
 
 .el-menu-item {
-  font-size: 3.3rem;
   min-width: 195px;
   padding: 0 12px;
   float: none !important;

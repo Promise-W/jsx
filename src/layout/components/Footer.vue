@@ -1,7 +1,7 @@
 <template>
   <div class="footer-wrap">
     <div class="footer-content">
-      this is footer
+      ❤Love you as love life, love life as love you❤
     </div>
   </div>
 </template>
@@ -13,10 +13,10 @@ export default {
 </script>
 
 <style lang="scss">
-.footer-wrap {
-    width: 100%;
-    color: #999;
-    background: #202020 url(~@/assets/images/footer.png);
-    padding: 80px 0 170px
-}
+  .footer-content {
+    padding-top: 15px;
+    text-align: center;
+    color: #909399;
+    font-size: 16px;
+  }
 </style>

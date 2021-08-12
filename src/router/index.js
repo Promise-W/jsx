@@ -9,36 +9,30 @@ const routes = [
     path: '/',
     name: 'Root',
     component: Layout,
-    redirect: '/sunhome',
-    children: [
-      {
-        path: 'sunhome',
-        name: 'SunHome',
-        component: () => import('@/views/sunhome.vue')
-      }
-    ]
+    redirect: '/loveyou'
   },
   {
     path: '/',
     component: Layout,
     children: [
       {
-        path: 'loveforever',
-        name: 'LoveForever',
-        component: () => import('@/views/loveforever.vue'),
-        meta: { title: 'About', icon: 'documentation', affix: true }
+        path: 'loveyou',
+        name: 'LoveYou',
+        component: () => import('@/views/loveyou.vue'),
+        meta: { title: 'LoveYou', icon: 'love-you' }
       },
       {
-        path: 'beautylife',
-        name: 'BeautyLife',
-        component: () => import('@/views/beautylife.vue')
+        path: 'lovelife',
+        name: 'LoveLife',
+        component: () => import('@/views/lovelife.vue'),
+        meta: { title: 'LoveLife', icon: 'Love-life' }
       }
     ]
   }
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes
 })
