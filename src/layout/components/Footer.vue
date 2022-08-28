@@ -3,6 +3,9 @@
     <div class="footer-content">
       ❤Love you as love life, love life as love you❤
     </div>
+    <div style="text-align: center;margin: 20px;">
+      <a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备16008690号-3</a>
+    </div>
   </div>
 </template>
 
