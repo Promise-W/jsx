@@ -2,7 +2,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>ws, promise.love</title>
+		<title>i promise you</title>
 	    
         <link type="text/css" rel="stylesheet" href="./index_files/default.css">
 		<script type="text/javascript" src="./index_files/jquery.min.js"></script>
@@ -16,7 +16,7 @@
 		<script type="text/javascript" src="./index_files/love.js" charset="utf-8"></script>
     </head>
     <body>
-        <audio autoplay="autopaly" loop="loop">
+        <audio id="mp3Md" autoplay="autopaly" loop="loop">
             <source src="./promise.mp3" type="audio/mp3" />
         </audio>
 
@@ -24,7 +24,7 @@
             <div id="wrap">
                 <div id="text">
 			        <div id="code">
-			        	<span class="say">ws, promise.我爱你</span><br>
+			        	<span class="say">我爱你</span><br>
 						<span class="say"> </span><br>
 						<span class="say"> </span><br>
                         <span class="say">// 不经意相识, 或许是缘分，或许是注定的。</span><br>
@@ -41,11 +41,12 @@
                         <span class="say"> </span><br>
                         <span class="say">// You are my only girl and my world..永远..</span><br>
 						<span class="say"> </span><br>
-                        <span class="say"><span class="space"></span> -- Wjx--</span>
+                        <span class="say"><span class="space"></span> -- promise --</span>
 			        </div>
                 </div>
                 <div id="clock-box">
-                    Ws <span class="STYLE1">与</span> Wjx<span class="STYLE1">已经相识了</span>
+                    <!-- Ws <span class="STYLE1">与</span> Wjx -->
+                    <span class="STYLE1">已经相识了</span>
                   <div id="clock"></div>
               </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
@@ -113,6 +114,8 @@
         var hold = 1;
 
         canvas.click(function(e) {
+            $('#mp3Md')[0].play() // 播放音乐
+
             var offset = canvas.offset(), x, y;
             x = e.pageX - offset.left;
             y = e.pageY - offset.top;
@@ -187,7 +190,7 @@
 
         var textAnimate = eval(Jscex.compile("async", function () {
 		    var together = new Date();
-		    together.setFullYear(2019, 11, -19); 			//时间年月日
+		    together.setFullYear(2018, 8, 29); 			//时间年月日
 		    together.setHours(23);						//小时	
 		    together.setMinutes(33);					//分钟
 		    together.setSeconds(0);					//秒前一位
@@ -216,5 +219,5 @@
     })();
     </script>
 
-<center>ws.promise.love</center>
+<center>promise.love</center>
 </body></html>

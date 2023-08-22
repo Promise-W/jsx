@@ -1,5 +1,5 @@
 <template>
-  <iframe class="iframe" src="./lovedate/index.html" frameborder="0" style="width: 100%; height: 100%;;" />
+  <iframe class="iframe" src="./loveyou/index.html" frameborder="0" style="width: 100%; height: 100%;;" />
 </template>
 
 <script>
